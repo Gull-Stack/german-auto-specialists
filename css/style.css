@@ -174,11 +174,7 @@ p { margin-bottom: 16px; color: #444; }
 
 /* Hero to content gradient fade */
 .hero-to-content-fade {
-  height: 200px;
-  margin-top: -200px;
-  position: relative;
-  z-index: 3;
-  background: linear-gradient(to bottom, var(--black) 0%, var(--light-gray) 100%);
+  display: none;
 }
 
 /* Overlay stats */
@@ -220,6 +216,7 @@ p { margin-bottom: 16px; color: #444; }
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 1;
   pointer-events: none;
+  transition: opacity 0.15s;
 }
 #hero-canvas {
   width: 100%;
@@ -258,7 +255,7 @@ p { margin-bottom: 16px; color: #444; }
 }
 
 /* --- Sections --- */
-.section { padding: 100px 24px; }
+.section { padding: 100px 24px; position: relative; z-index: 3; background: var(--light-gray); }
 .section-dark { background: var(--dark); }
 .section-light { background: var(--light-gray); }
 .section-center { text-align: center; }

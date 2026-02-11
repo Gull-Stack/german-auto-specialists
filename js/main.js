@@ -121,7 +121,15 @@ document.addEventListener('DOMContentLoaded', () => {
       // Show/hide fixed canvas based on hero visibility
       const container = document.getElementById('scroll-animation-container');
       if (container) {
-        container.style.display = (rect.bottom > 0) ? 'block' : 'none';
+        if (rect.bottom <= 0) {
+          container.style.opacity = '0';
+          container.style.pointerEvents = 'none';
+        } else if (rect.bottom < window.innerHeight) {
+          // Fade out canvas as hero section scrolls away
+          container.style.opacity = (rect.bottom / window.innerHeight).toString();
+        } else {
+          container.style.opacity = '1';
+        }
       }
     }, { passive: true });
   }
