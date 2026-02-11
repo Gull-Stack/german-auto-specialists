@@ -17,7 +17,7 @@
   --accent-hover: #e03340;
   --red: #cc2936;
   --font-body: 'Inter', sans-serif;
-  --font-heading: 'Playfair Display', serif;
+  --font-heading: 'Inter', sans-serif;
   --max-width: 1200px;
   --header-height: 80px;
 }
@@ -39,7 +39,7 @@ a:hover { color: var(--accent-hover); }
 .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
 
 /* --- Typography --- */
-h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; color: var(--dark); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 800; line-height: 1.1; color: var(--dark); text-transform: uppercase; letter-spacing: -0.5px; }
 h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
 h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 16px; }
 h3 { font-size: clamp(1.3rem, 3vw, 1.8rem); margin-bottom: 12px; }
