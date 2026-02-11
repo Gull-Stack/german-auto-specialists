@@ -64,8 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Scroll-Triggered Frame Animation ---
   const canvas = document.getElementById('hero-canvas');
   const heroSection = document.querySelector('.hero');
-  const heroContent = document.querySelector('.hero-content');
-  
   if (canvas && heroSection) {
     const ctx = canvas.getContext('2d');
     const TOTAL_FRAMES = 96;
@@ -118,12 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (frameIndex !== currentFrame) {
         currentFrame = frameIndex;
         requestAnimationFrame(() => drawFrame(currentFrame));
-      }
-
-      // Fade out text as animation progresses
-      if (heroContent) {
-        const textOpacity = Math.max(1 - (progress * 3), 0);
-        heroContent.style.opacity = textOpacity;
       }
 
       // Show/hide fixed canvas based on hero visibility

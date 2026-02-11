@@ -79,35 +79,52 @@
     <div id="scroll-animation-container">
       <canvas id="hero-canvas"></canvas>
     </div>
-    <div class="hero-content">
-      <p class="section-label">West Jordan's Trusted German Auto Shop</p>
-      <h1>Your German Car Deserves <em>Expert</em> Hands</h1>
-      <p>Dealer-quality Audi, BMW, Volkswagen & Mini Cooper repair — without the dealer price tag. Honest diagnostics, certified mechanics, fast turnaround.</p>
-      <div class="hero-buttons">
-        <a href="tel:+18014328790" class="btn btn-primary">Call Now — (801) 432-8790</a>
-        <a href="services/index.html" class="btn btn-outline">View Our Services</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Trust Bar -->
-  <section class="trust-bar">
-    <div class="container">
-      <div class="trust-item fade-up">
-        <h3>20+</h3>
-        <p>Years of Experience</p>
+    <!-- Scroll panels that overlay the animation -->
+    <div class="hero-scroll-panels">
+      <!-- Panel 1: Hero text (visible at start) -->
+      <div class="scroll-panel panel-hero">
+        <div class="panel-inner">
+          <p class="section-label">West Jordan's Trusted German Auto Shop</p>
+          <h1>Your German Car Deserves <em>Expert</em> Hands</h1>
+          <p>Dealer-quality Audi, BMW, Volkswagen & Mini Cooper repair — without the dealer price tag.</p>
+          <div class="hero-buttons">
+            <a href="tel:+18014328790" class="btn btn-primary">Call Now — (801) 432-8790</a>
+            <a href="services/index.html" class="btn btn-outline">View Our Services</a>
+          </div>
+        </div>
       </div>
-      <div class="trust-item fade-up">
-        <h3>★ 4.9</h3>
-        <p>Star Reviews</p>
+
+      <!-- Panel 2: Trust stats (appears mid-scroll) -->
+      <div class="scroll-panel panel-stats">
+        <div class="panel-inner">
+          <div class="overlay-stats">
+            <div class="overlay-stat">
+              <h3>20+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="overlay-stat">
+              <h3>4.9 ★</h3>
+              <p>Google Reviews</p>
+            </div>
+            <div class="overlay-stat">
+              <h3>40%</h3>
+              <p>Less Than Dealers</p>
+            </div>
+            <div class="overlay-stat">
+              <h3>100%</h3>
+              <p>Certified Mechanics</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="trust-item fade-up">
-        <h3>100%</h3>
-        <p>Certified Mechanics</p>
-      </div>
-      <div class="trust-item fade-up">
-        <h3>40%</h3>
-        <p>Less Than Dealer Prices</p>
+
+      <!-- Panel 3: Value prop (appears as car is deconstructed) -->
+      <div class="scroll-panel panel-value">
+        <div class="panel-inner">
+          <h2 style="color:#fff; margin-bottom:16px;">We Know What's Under the Hood</h2>
+          <p style="color:rgba(255,255,255,.75); font-size:1.15rem; max-width:600px; margin:0 auto;">Every bolt, every sensor, every system — German engineering decoded by specialists who work on these cars every single day.</p>
+        </div>
       </div>
     </div>
   </section>

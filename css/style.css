@@ -138,19 +138,67 @@ p { margin-bottom: 16px; color: #444; }
   text-align: center;
   overflow: visible;
 }
-.hero-content {
-  position: sticky;
-  top: 50%;
-  transform: translateY(-50%);
+/* Scroll panels that overlay the animation */
+.hero-scroll-panels {
+  position: relative;
   z-index: 2;
-  padding: 120px 24px 80px;
-  max-width: 800px;
-  transition: opacity 0.4s;
+  width: 100%;
 }
+.scroll-panel {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+.panel-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.panel-hero { padding-top: 100px; }
+.panel-stats { }
+.panel-value { }
+
 .hero h1 { color: var(--white); margin-bottom: 24px; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero p { color: rgba(255,255,255,.7); font-size: 1.15rem; max-width: 560px; margin: 0 auto 40px; }
 .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+/* Overlay stats */
+.overlay-stats {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.overlay-stat {
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 16px;
+  padding: 32px 40px;
+  min-width: 160px;
+}
+.overlay-stat h3 {
+  color: var(--accent);
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin-bottom: 4px;
+}
+.overlay-stat p {
+  color: rgba(255,255,255,.7);
+  font-size: 0.85rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .overlay-stats { gap: 16px; }
+  .overlay-stat { padding: 20px 24px; min-width: 140px; }
+  .overlay-stat h3 { font-size: 1.6rem; }
+}
 #scroll-animation-container {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
