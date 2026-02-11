@@ -77,18 +77,7 @@
   <!-- Hero -->
   <section class="hero">
     <div id="scroll-animation-container">
-      <!-- SCROLL-TRIGGERED FRAME ANIMATION PLACEHOLDER
-           To implement:
-           1. Export animation frames as sequential PNGs to /images/hero-frames/
-              (e.g., frame-001.png through frame-120.png)
-           2. Create a <canvas> element inside this container via JS
-           3. Preload all frames into an array of Image objects
-           4. On scroll, calculate progress (0-1) based on hero section scroll position
-           5. Map progress to frame index: Math.floor(progress * (totalFrames - 1))
-           6. Draw the corresponding frame onto the canvas using ctx.drawImage()
-           7. Use requestAnimationFrame for smooth rendering
-           See: https://css-tricks.com/lets-make-one-of-those-fancy-scrolling-animations-used-on-apple-product-pages/
-      -->
+      <canvas id="hero-canvas"></canvas>
     </div>
     <div class="hero-content">
       <p class="section-label">West Jordan's Trusted German Auto Shop</p>
@@ -131,25 +120,29 @@
       <p class="fade-up">Every German car is engineered differently. That's why our mechanics are trained specifically in Audi, BMW, Volkswagen, and Mini Cooper systems.</p>
       <div class="services-grid">
         <div class="service-card fade-up">
-          <div class="icon">🔧</div>
+          <div class="icon-img"><img src="https://placehold.co/80x80/1a1a1a/cc2936?text=Audi" alt="Audi Repair"></div>
+          <img src="https://placehold.co/400x250/1a1a1a/cc2936?text=Audi+Service" alt="Audi Service" class="service-img">
           <h3>Audi Repair</h3>
           <p>From routine maintenance to complex engine work — your Audi gets the specialized attention it deserves, at a fraction of dealer cost.</p>
           <a href="services/audi-repair.html">Learn More →</a>
         </div>
         <div class="service-card fade-up">
-          <div class="icon">⚙️</div>
+          <div class="icon-img"><img src="https://placehold.co/80x80/1a1a1a/cc2936?text=BMW" alt="BMW Repair"></div>
+          <img src="https://placehold.co/400x250/1a1a1a/cc2936?text=BMW+Service" alt="BMW Service" class="service-img">
           <h3>BMW Repair</h3>
           <p>Timely, thorough, and personal BMW service. We handle everything from oil changes to electrical diagnostics with precision.</p>
           <a href="services/bmw-repair.html">Learn More →</a>
         </div>
         <div class="service-card fade-up">
-          <div class="icon">🔩</div>
+          <div class="icon-img"><img src="https://placehold.co/80x80/1a1a1a/cc2936?text=VW" alt="Volkswagen Repair"></div>
+          <img src="https://placehold.co/400x250/1a1a1a/cc2936?text=VW+Service" alt="Volkswagen Service" class="service-img">
           <h3>Volkswagen Repair</h3>
           <p>Honest diagnoses, affordable maintenance, and expert repairs. From basic service to complex VW repairs, we've seen it all.</p>
           <a href="services/volkswagen-repair.html">Learn More →</a>
         </div>
         <div class="service-card fade-up">
-          <div class="icon">🏎️</div>
+          <div class="icon-img"><img src="https://placehold.co/80x80/1a1a1a/cc2936?text=Mini" alt="Mini Cooper Repair"></div>
+          <img src="https://placehold.co/400x250/1a1a1a/cc2936?text=Mini+Service" alt="Mini Cooper Service" class="service-img">
           <h3>Mini Cooper Repair</h3>
           <p>Affordable Mini maintenance and repairs performed by certified professionals. Quick turnaround, quality parts, fair prices.</p>
           <a href="services/mini-repair.html">Learn More →</a>
@@ -165,22 +158,22 @@
       <h2 class="fade-up">The Smarter Alternative to the Dealership</h2>
       <div class="features-grid">
         <div class="feature-item fade-up">
-          <div class="icon">💰</div>
+          <div class="icon-img"><img src="https://placehold.co/64x64/1a1a1a/cc2936?text=Save" alt="Save Money"></div>
           <h3>Save Up to 40%</h3>
           <p>Same quality parts, same expert service — without the overhead markups that drive dealership prices through the roof.</p>
         </div>
         <div class="feature-item fade-up">
-          <div class="icon">🤝</div>
+          <div class="icon-img"><img src="https://placehold.co/64x64/1a1a1a/cc2936?text=Trust" alt="Honest Diagnostics"></div>
           <h3>Honest Diagnostics</h3>
           <p>We tell you exactly what's wrong, what needs fixing now, and what can wait. No pressure, no upselling, no surprises on your bill.</p>
         </div>
         <div class="feature-item fade-up">
-          <div class="icon">⚡</div>
+          <div class="icon-img"><img src="https://placehold.co/64x64/1a1a1a/cc2936?text=Fast" alt="Fast Turnaround"></div>
           <h3>Fast Turnaround</h3>
           <p>We know your car is your lifeline. Most repairs are completed same-day or next-day so you're back on the road fast.</p>
         </div>
         <div class="feature-item fade-up">
-          <div class="icon">🏅</div>
+          <div class="icon-img"><img src="https://placehold.co/64x64/1a1a1a/cc2936?text=Cert" alt="Certified Expertise"></div>
           <h3>Certified Expertise</h3>
           <p>Our mechanics specialize exclusively in German vehicles. Your car gets a specialist, not a generalist who Googles the problem.</p>
         </div>
@@ -258,9 +251,9 @@
       <div class="contact-snippet">
         <div class="contact-info fade-up">
           <h3>German Auto Specialists</h3>
-          <p>📍 1372 West 7800 South, West Jordan, Utah 84088</p>
-          <p>📞 <a href="tel:+18014328790">(801) 432-8790</a></p>
-          <p>🕐 Monday – Friday: 8:30 AM – 5:30 PM</p>
+          <p>1372 West 7800 South, West Jordan, Utah 84088</p>
+          <p><a href="tel:+18014328790">(801) 432-8790</a></p>
+          <p>Monday – Friday: 8:30 AM – 5:30 PM</p>
           <p>Saturday – Sunday: Closed</p>
           <br>
           <a href="contact.html" class="btn btn-dark">Contact Us</a>
@@ -316,7 +309,7 @@
   </footer>
 
   <!-- Floating Call Button -->
-  <a href="tel:+18014328790" class="floating-call" aria-label="Call German Auto Specialists">📞</a>
+  <a href="tel:+18014328790" class="floating-call" aria-label="Call German Auto Specialists"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
 
   <script src="js/main.js"></script>
 </body>
