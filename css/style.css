@@ -129,32 +129,38 @@ p { margin-bottom: 16px; color: #444; }
 /* --- Hero --- */
 .hero {
   position: relative;
-  min-height: 100vh;
-  background: var(--dark);
+  height: 300vh;
+  min-height: 300vh;
+  background: var(--black);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
+  overflow: visible;
 }
-.hero-content { position: relative; z-index: 2; padding: 120px 24px 80px; max-width: 800px; }
+.hero-content {
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 120px 24px 80px;
+  max-width: 800px;
+  transition: opacity 0.4s;
+}
 .hero h1 { color: var(--white); margin-bottom: 24px; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero p { color: rgba(255,255,255,.7); font-size: 1.15rem; max-width: 560px; margin: 0 auto 40px; }
 .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-
 #scroll-animation-container {
-  position: absolute;
+  position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 1;
-  /* ANIMATION PLACEHOLDER:
-     To add scroll-triggered frame animation:
-     1. Export frames as sequential PNGs (frame-001.png, frame-002.png, etc.) to /images/hero-frames/
-     2. In main.js, load frames into a canvas element appended here
-     3. Use IntersectionObserver or scroll listener to map scroll position to frame index
-     4. Draw the corresponding frame on scroll
-     Example: const canvas = document.createElement('canvas'); this.appendChild(canvas);
-  */
+  pointer-events: none;
+}
+#hero-canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* --- Page Hero (inner pages) --- */
