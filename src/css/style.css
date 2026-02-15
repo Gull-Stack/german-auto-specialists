@@ -569,3 +569,30 @@ p { margin-bottom: 16px; color: #444; }
 .text-center { text-align: center; }
 .mt-48 { margin-top: 48px; }
 .mb-24 { margin-bottom: 24px; }
+
+/* Big brand logos for service cards */
+.brand-logo-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  padding: 1.5rem;
+  background: #f8f8f8;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.brand-logo-large img {
+  max-height: 140px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.service-card .icon {
+  display: none;
+}
+
+.service-card .service-img {
+  display: none;
+}
