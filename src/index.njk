@@ -1,88 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>German Auto Specialists — Independent Audi, BMW, VW & Mini Repair in West Jordan, Utah</title>
-  <meta name="description" content="German Auto Specialists is West Jordan's trusted independent German auto repair shop. Expert Audi, BMW, Volkswagen & Mini Cooper service at prices below the dealer. Call (801) 432-8790.">
-  <link rel="canonical" href="https://german-auto-specialists.com/">
-  <meta property="og:title" content="German Auto Specialists — Independent German Auto Repair, West Jordan UT">
-  <meta property="og:description" content="Expert Audi, BMW, VW & Mini repair. Honest service, certified mechanics, dealer-quality work at independent prices.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://german-auto-specialists.com/">
-  <meta property="og:image" content="https://german-auto-specialists.com/images/og-image.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["AutoRepair", "LocalBusiness"],
-    "name": "German Auto Specialists",
-    "image": "https://german-auto-specialists.com/images/shop.jpg",
-    "url": "https://german-auto-specialists.com",
-    "telephone": "+18014328790",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1372 West 7800 South",
-      "addressLocality": "West Jordan",
-      "addressRegion": "UT",
-      "postalCode": "84088",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 40.6091,
-      "longitude": -111.9391
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:30",
-        "closes": "17:30"
-      }
-    ],
-    "priceRange": "$$",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "150"
+---
+title: "German Auto Specialists — Independent Audi, BMW, VW & Mini Repair in West Jordan, Utah"
+description: "German Auto Specialists is West Jordan's trusted independent German auto repair shop. Expert Audi, BMW, Volkswagen & Mini Cooper service at prices below the dealer. Call (801) 432-8790."
+---
+{% extends "base.njk" %}
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["AutoRepair", "LocalBusiness"],
+  "name": "German Auto Specialists",
+  "image": "https://german-auto-specialists.com/images/shop.jpg",
+  "url": "https://german-auto-specialists.com",
+  "telephone": "+18014328790",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1372 West 7800 South",
+    "addressLocality": "West Jordan",
+    "addressRegion": "UT",
+    "postalCode": "84088",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.6091,
+    "longitude": -111.9391
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "17:30"
     }
+  ],
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "150"
   }
-  </script>
-</head>
-<body>
+}
+</script>
+{% endblock %}
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="German Auto Specialists" style="height:44px;width:auto;"></a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="services/index.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="tel:+18014328790" class="btn btn-primary">Call (801) 432-8790</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </header>
-
+{% block content %}
   <!-- Hero -->
   <section class="hero">
     <div id="scroll-animation-container">
       <canvas id="hero-canvas"></canvas>
     </div>
 
-    <!-- Scroll panels that overlay the animation -->
     <div class="hero-scroll-panels">
-      <!-- Panel 1: Hero text (visible at start) -->
       <div class="scroll-panel panel-hero">
         <div class="panel-inner">
           <p class="section-label">West Jordan's Trusted German Auto Shop</p>
@@ -94,7 +63,6 @@
         </div>
       </div>
 
-      <!-- Panel 2: Trust stats (appears mid-scroll) -->
       <div class="scroll-panel panel-stats">
         <div class="panel-inner">
           <div class="overlay-stats">
@@ -118,7 +86,6 @@
         </div>
       </div>
 
-      <!-- Panel 3: Value prop (appears as car is deconstructed) -->
       <div class="scroll-panel panel-value">
         <div class="panel-inner">
           <h2 style="color:#fff; margin-bottom:16px; text-shadow: 0 2px 20px rgba(0,0,0,.8), 0 0 60px rgba(0,0,0,.5);">We Know What's Under the Hood</h2>
@@ -128,7 +95,6 @@
     </div>
   </section>
 
-  <!-- Gradient transition from dark to light -->
   <div class="hero-to-content-fade"></div>
 
   <!-- Services Overview -->
@@ -139,32 +105,32 @@
       <p class="fade-up">Every German car is engineered differently. That's why our mechanics are trained specifically in Audi, BMW, Volkswagen, and Mini Cooper systems.</p>
       <div class="services-grid">
         <div class="service-card fade-up">
-          <div class="icon"><img src="images/audi-logo.png" alt="Audi" style="height:48px;width:auto;"></div>
+          <div class="icon"><img src="/images/audi-logo.png" alt="Audi" style="height:48px;width:auto;"></div>
           <img src="https://placehold.co/400x250/1a1a1a/cc2936?text=Audi+Service" alt="Audi Service" class="service-img">
           <h3>Audi Repair</h3>
           <p>From routine maintenance to complex engine work — your Audi gets the specialized attention it deserves, at a fraction of dealer cost.</p>
-          <a href="services/audi-repair.html">Learn More →</a>
+          <a href="/services/audi-repair/">Learn More →</a>
         </div>
         <div class="service-card fade-up">
-          <div class="icon"><img src="images/bmw-logo.png" alt="BMW" style="height:48px;width:auto;"></div>
+          <div class="icon"><img src="/images/bmw-logo.png" alt="BMW" style="height:48px;width:auto;"></div>
           <img src="https://placehold.co/400x250/1a1a1a/cc2936?text=BMW+Service" alt="BMW Service" class="service-img">
           <h3>BMW Repair</h3>
           <p>Timely, thorough, and personal BMW service. We handle everything from oil changes to electrical diagnostics with precision.</p>
-          <a href="services/bmw-repair.html">Learn More →</a>
+          <a href="/services/bmw-repair/">Learn More →</a>
         </div>
         <div class="service-card fade-up">
-          <div class="icon"><img src="images/vw-logo.png" alt="Volkswagen" style="height:48px;width:auto;"></div>
+          <div class="icon"><img src="/images/vw-logo.png" alt="Volkswagen" style="height:48px;width:auto;"></div>
           <img src="https://placehold.co/400x250/1a1a1a/cc2936?text=VW+Service" alt="Volkswagen Service" class="service-img">
           <h3>Volkswagen Repair</h3>
           <p>Honest diagnoses, affordable maintenance, and expert repairs. From basic service to complex VW repairs, we've seen it all.</p>
-          <a href="services/volkswagen-repair.html">Learn More →</a>
+          <a href="/services/volkswagen-repair/">Learn More →</a>
         </div>
         <div class="service-card fade-up">
-          <div class="icon"><img src="images/mini-logo.png" alt="Mini Cooper" style="height:48px;width:auto;"></div>
+          <div class="icon"><img src="/images/mini-logo.png" alt="Mini Cooper" style="height:48px;width:auto;"></div>
           <img src="https://placehold.co/400x250/1a1a1a/cc2936?text=Mini+Service" alt="Mini Cooper Service" class="service-img">
           <h3>Mini Cooper Repair</h3>
           <p>Affordable Mini maintenance and repairs performed by certified professionals. Quick turnaround, quality parts, fair prices.</p>
-          <a href="services/mini-repair.html">Learn More →</a>
+          <a href="/services/mini-repair/">Learn More →</a>
         </div>
       </div>
     </div>
@@ -257,7 +223,7 @@
       <p class="fade-up">Get expert German auto repair at honest prices. Call now or stop by our West Jordan shop — no appointment needed for estimates.</p>
       <div class="cta-buttons fade-up">
         <a href="tel:+18014328790" class="btn btn-primary">Call (801) 432-8790</a>
-        <a href="contact.html" class="btn btn-outline">Get Directions</a>
+        <a href="/contact/" class="btn btn-outline">Get Directions</a>
       </div>
     </div>
   </section>
@@ -275,7 +241,7 @@
           <p>Monday – Friday: 8:30 AM – 5:30 PM</p>
           <p>Saturday – Sunday: Closed</p>
           <br>
-          <a href="contact.html" class="btn btn-dark">Contact Us</a>
+          <a href="/contact/" class="btn btn-dark">Contact Us</a>
         </div>
         <div class="map-placeholder fade-up">
           <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=German+Auto+Specialists,1372+W+7800+S,West+Jordan,UT+84088&zoom=15" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="German Auto Specialists location" style="width:100%;height:100%;border:0;"></iframe>
@@ -283,53 +249,4 @@
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <a href="index.html" class="logo"><img src="images/logo.png" alt="German Auto Specialists" style="height:44px;width:auto;"></a>
-          <p>West Jordan's trusted independent German auto repair shop. Expert Audi, BMW, Volkswagen & Mini Cooper service since 2005.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services/index.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services/audi-repair.html">Audi Repair</a></li>
-            <li><a href="services/bmw-repair.html">BMW Repair</a></li>
-            <li><a href="services/volkswagen-repair.html">VW Repair</a></li>
-            <li><a href="services/mini-repair.html">Mini Repair</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:+18014328790">(801) 432-8790</a></li>
-            <li>1372 W 7800 S</li>
-            <li>West Jordan, UT 84088</li>
-            <li>Mon-Fri 8:30–5:30</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 German Auto Specialists. All rights reserved.</p>
-        <a href="https://gullstack.com" target="_blank" rel="noopener">Marketing by GullStack</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Floating Call Button -->
-  <a href="tel:+18014328790" class="floating-call" aria-label="Call German Auto Specialists"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+{% endblock %}
