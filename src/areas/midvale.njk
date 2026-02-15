@@ -1,0 +1,92 @@
+---
+title: "German Auto Repair Midvale, UT | Audi BMW VW Mini Service"
+description: "Expert German auto repair near Midvale, Utah. Audi, BMW, VW & Mini service. Call (801) 432-8790."
+city: "Midvale"
+directions: "Head west on 7200 South to Redwood Road, then south to 7800 South. We're just west of Redwood."
+driveTime: "10-15 minutes"
+---
+{% extends "base.njk" %}
+
+{% block content %}
+  <section class="page-hero">
+    <p class="section-label">Serving {{ city }}, Utah</p>
+    <h1>German Auto Repair Near {{ city }}</h1>
+    <p>Expert Audi, BMW, Volkswagen & Mini Cooper service. Dealer-quality at independent prices.</p>
+    <div class="breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/areas/">Areas</a> <span>/</span> <span>{{ city }}</span></div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="fade-up">
+          <h2>Your Trusted German Auto Shop Near {{ city }}</h2>
+          <p>{{ city }} residents trust German Auto Specialists for expert German auto repair. Our West Jordan location is a quick drive away, serving the Salt Lake Valley with honest, affordable service for Audi, BMW, Volkswagen, and Mini Cooper.</p>
+          <p>Our certified mechanics specialize exclusively in German vehicles with factory-level diagnostic tools and OEM-quality parts.</p>
+          <h3>Why {{ city }} Drivers Choose Us</h3>
+          <ul>
+            <li><strong>Quick Drive:</strong> Just 10-15 minutes from {{ city }}</li>
+            <li><strong>Save 30-40%:</strong> Independent rates vs. dealer markup</li>
+            <li><strong>German-Only Specialists:</strong> Audi, BMW, VW & Mini every day</li>
+            <li><strong>Honest Service:</strong> No upselling, fix only what's needed</li>
+            <li><strong>Fast Turnaround:</strong> Most repairs same-day or next-day</li>
+          </ul>
+          <div style="margin-top: 24px;">
+            <a href="tel:+18014328790" class="btn btn-primary">Call (801) 432-8790</a>
+            <a href="/contact/" class="btn btn-outline" style="margin-left: 12px;">Get Directions</a>
+          </div>
+        </div>
+        <div class="fade-up">
+          <img src="/images/service-bay.jpg" alt="Service bay" style="width:100%;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.15);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light section-center">
+    <div class="container">
+      <p class="section-label fade-up">What We Service</p>
+      <h2 class="fade-up">German Vehicles We Repair</h2>
+      <div class="services-grid">
+        <div class="service-card fade-up"><div class="icon"><img src="/images/audi-logo.png" alt="Audi" style="height:48px;width:auto;"></div><h3>Audi Repair</h3><p>All Audi models.</p><a href="/services/audi-repair/">Learn More →</a></div>
+        <div class="service-card fade-up"><div class="icon"><img src="/images/bmw-logo.png" alt="BMW" style="height:48px;width:auto;"></div><h3>BMW Repair</h3><p>All BMW models.</p><a href="/services/bmw-repair/">Learn More →</a></div>
+        <div class="service-card fade-up"><div class="icon"><img src="/images/vw-logo.png" alt="VW" style="height:48px;width:auto;"></div><h3>VW Repair</h3><p>All Volkswagen models.</p><a href="/services/volkswagen-repair/">Learn More →</a></div>
+        <div class="service-card fade-up"><div class="icon"><img src="/images/mini-logo.png" alt="Mini" style="height:48px;width:auto;"></div><h3>Mini Repair</h3><p>All Mini models.</p><a href="/services/mini-repair/">Learn More →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="fade-up">
+          <h2>Directions from {{ city }}</h2>
+          <p><strong>German Auto Specialists</strong><br>1372 West 7800 South<br>West Jordan, UT 84088</p>
+          <p><strong>From {{ city }}:</strong> {{ directions }}</p>
+          <p><strong>Drive Time:</strong> {{ driveTime }}</p>
+          <p style="margin-top: 16px;"><strong>Hours:</strong> Mon–Fri 8:30 AM – 5:30 PM</p>
+          <p style="margin-top: 16px;"><a href="tel:+18014328790" style="font-size: 1.3rem; font-weight: 700;">(801) 432-8790</a></p>
+        </div>
+        <div class="fade-up">
+          <h2>Services We Provide</h2>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 8px 0;">✓ Oil Changes</li>
+            <li style="padding: 8px 0;">✓ Brake Service</li>
+            <li style="padding: 8px 0;">✓ Check Engine Diagnostics</li>
+            <li style="padding: 8px 0;">✓ Timing Chain/Belt</li>
+            <li style="padding: 8px 0;">✓ Transmission Service</li>
+            <li style="padding: 8px 0;">✓ Suspension & Steering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="fade-up">{{ city }}'s Choice for German Auto Repair</h2>
+      <div class="cta-buttons fade-up">
+        <a href="tel:+18014328790" class="btn btn-primary">Call (801) 432-8790</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}
