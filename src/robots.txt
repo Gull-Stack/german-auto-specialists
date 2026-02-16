@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://german-auto-specialists.com/sitemap.xml
