@@ -37,7 +37,7 @@ export default async function handler(req, res) {
     }
 
     const siteName = 'German Auto Specialists';
-    const siteEmail = process.env.SITE_EMAIL || 'vincent@german-auto-specialists.com';
+    const siteEmail = process.env.SITE_EMAIL || 'vincen@german-auto-specialists.com';
     const fromEmail = process.env.FROM_EMAIL || 'leads@gullstack.com';
 
     // Send confirmation to lead
