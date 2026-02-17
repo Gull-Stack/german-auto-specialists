@@ -47,6 +47,11 @@ description: "Contact German Auto Specialists for expert Audi, BMW, VW & Mini re
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Tell us about your vehicle's issue or what service you need..."></textarea>
 
+            <!-- Honeypot spam protection -->
+            <div style="position: absolute; left: -9999px;" aria-hidden="true">
+              <input type="text" name="fax_number" tabindex="-1" autocomplete="off">
+            </div>
+
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
         </div>
