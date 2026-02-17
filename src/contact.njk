@@ -52,8 +52,15 @@ description: "Contact German Auto Specialists for expert Audi, BMW, VW & Mini re
               <input type="text" name="fax_number" tabindex="-1" autocomplete="off">
             </div>
 
+            <!-- Timestamp token (bot detection) -->
+            <input type="hidden" name="_timestamp" id="_timestamp" value="">
+
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
+          <script>
+            // Set timestamp when page loads (bots that submit too fast get blocked)
+            document.getElementById('_timestamp').value = Date.now();
+          </script>
         </div>
 
         <!-- Contact Info -->
