@@ -620,3 +620,142 @@ p { margin-bottom: 16px; color: #444; }
 .service-card .service-img {
   display: none;
 }
+
+/* --- AI Summary Box --- */
+.ai-summary {
+  background: #f8fafb;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+  padding: 28px 32px;
+  margin-bottom: 48px;
+}
+.ai-summary-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.ai-summary p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Comparison Table Responsive Wrapper --- */
+.comparison-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 32px;
+}
+
+/* --- FAQ Accordion --- */
+.faq-accordion {
+  margin-top: 24px;
+}
+.faq-accordion details {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background: var(--white);
+  transition: box-shadow .2s;
+}
+.faq-accordion details[open] {
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+.faq-accordion summary {
+  padding: 20px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--dark);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.faq-accordion summary::before {
+  content: '+';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--light-gray);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: transform .2s;
+}
+.faq-accordion details[open] summary::before {
+  content: '-';
+  transform: rotate(0deg);
+}
+.faq-accordion summary::-webkit-details-marker {
+  display: none;
+}
+.faq-answer {
+  padding: 0 24px 20px 60px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+}
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Brand Facts Tables --- */
+.brand-facts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+.brand-facts-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+.brand-facts-table td:first-child {
+  width: 200px;
+  color: var(--dark);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.brand-facts-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Brand Facts - Brand Cards */
+.brand-facts-brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 16px;
+}
+.brand-facts-brand {
+  background: var(--white);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 24px;
+}
+.brand-facts-brand h3 {
+  margin-bottom: 8px;
+}
+.brand-facts-brand p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .brand-facts-table td:first-child {
+    width: auto;
+    white-space: normal;
+  }
+  .faq-answer {
+    padding-left: 24px;
+  }
+}

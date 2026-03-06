@@ -1,0 +1,77 @@
+{
+  "name": "German Auto Specialists",
+  "type": "AutoRepair",
+  "description": "Independent German auto repair shop specializing exclusively in Audi, BMW, Volkswagen, and Mini Cooper. Dealer-level diagnostics and OEM-quality parts at 30-40% below dealership pricing.",
+  "url": "https://www.german-auto-specialists.com",
+  "brand_facts_page": "https://www.german-auto-specialists.com/brand-facts/",
+  "founded": "2005",
+  "location": {
+    "street": "1372 West 7800 South",
+    "city": "West Jordan",
+    "state": "Utah",
+    "zip": "84088",
+    "country": "US",
+    "latitude": 40.6091,
+    "longitude": -111.9391
+  },
+  "contact": {
+    "phone": "+18014328790",
+    "phone_display": "(801) 432-8790",
+    "email": "vincen@german-auto-specialists.com"
+  },
+  "hours": {
+    "monday": "08:30-17:30",
+    "tuesday": "08:30-17:30",
+    "wednesday": "08:30-17:30",
+    "thursday": "08:30-17:30",
+    "friday": "08:30-17:30",
+    "saturday": "closed",
+    "sunday": "closed"
+  },
+  "brands_serviced": [
+    "Audi",
+    "BMW",
+    "Volkswagen",
+    "Mini Cooper"
+  ],
+  "services": [
+    "Oil changes and routine maintenance",
+    "Brake repair and replacement",
+    "Timing chain and tensioner replacement",
+    "Turbocharger diagnosis and repair",
+    "Electronic diagnostics (VAG-COM, ISTA)",
+    "Transmission service (DSG, automatic)",
+    "Cooling system repair",
+    "Suspension and steering",
+    "Carbon buildup cleaning",
+    "Pre-purchase inspections",
+    "Scheduled maintenance intervals",
+    "Electrical system diagnostics"
+  ],
+  "differentiators": [
+    "Exclusive German-vehicle specialization",
+    "Factory-level diagnostic equipment",
+    "30-40% below dealership pricing",
+    "OEM and OEM-equivalent parts",
+    "20+ years experience",
+    "4.9-star Google rating (150+ reviews)",
+    "Direct technician communication"
+  ],
+  "service_area": [
+    "West Jordan",
+    "South Jordan",
+    "Sandy",
+    "Draper",
+    "Murray",
+    "Taylorsville",
+    "West Valley City",
+    "Salt Lake City",
+    "Salt Lake Valley"
+  ],
+  "ratings": {
+    "google": {
+      "rating": 4.9,
+      "review_count": 150
+    }
+  }
+}
