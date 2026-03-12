@@ -37,7 +37,7 @@ function looksLikeSpam(data) {
   return false;
 }
 
-async function sendEmail({ to, from, subject, html, replyTo }) {
+async function sendEmail({ to, from, subject, html, replyTo, cc }) {
   const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
     method: 'POST',
     headers: {
@@ -45,7 +45,7 @@ async function sendEmail({ to, from, subject, html, replyTo }) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      personalizations: [{ to: [{ email: to }] }],
+      personalizations: [{ to: [{ email: to }], ...(cc ? { cc: [{ email: cc }] } : {}) }],
       from: { email: from },
       reply_to: replyTo ? { email: replyTo } : undefined,
       subject,
@@ -163,6 +163,7 @@ export default async function handler(req, res) {
         subject: `🔔 New Lead: ${name} - ${vehicle || service || 'General'}`,
         html: notificationHtml,
         replyTo: email,
+        cc: 'bryce@gullstack.com',
       });
     }
 
