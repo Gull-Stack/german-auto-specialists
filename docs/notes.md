@@ -1,11 +1,21 @@
 # German Auto Specialists — Durable Notes
 
 ## Who is who
-- **Vincen Gillespie** — owner. Goes by Vinny / Vince. Does **not** answer the phone;
-  never write copy that says he does.
-- **Kaden Duncan** — the day-to-day contact, +1 (801) 953-7340. He speaks for Vincen
-  and is more responsive. Send change confirmations to him by text.
-- Lead notification email on file: `vincen@german-auto-specialists.com`.
+
+| Who | Mobile | Email |
+|---|---|---|
+| **Vincen Gillespie** — owner | **(801) 722-8523** | vincen@german-auto-specialists.com |
+| **Kaden Duncan** — day-to-day | (801) 953-7340 | kaden.dunc12@gmail.com |
+| Shop line (on the website) | (801) 432-8790 | — |
+
+- Vincen goes by Vinny / Vince. He does **not** answer the shop line; never write
+  copy that says he does.
+- Kaden speaks for Vincen and is far more responsive. He **texts** — he does not
+  email. His email address above came from his own test lead, not from him.
+- ⚠️ **Both men are saved in Bryce's phone under the organisation "German Auto
+  Specialists", and Kaden's contact has no first name on it.** The phone shows only
+  "German Auto Spe…" on either thread. Always say the person's name *and* the
+  number, never just "the client".
 
 ## Hard constraints
 - **No manufacturer logos anywhere on the site.** The shop received a cease and desist

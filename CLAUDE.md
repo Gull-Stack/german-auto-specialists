@@ -48,6 +48,14 @@ facts about this business that are actually verified.
 - **Verified:** clean Eleventy build, all 19 pages 200, zero broken internal links,
   zero broken image references, `/guides/*` redirecting.
 
+- **Contacts corrected.** Vincen Gillespie is on **(801) 722-8523**; the thread
+  Bryce had been using for four months is **Kaden Duncan** on (801) 953-7340.
+  Both are saved in Bryce's phone under the org name with no person attached, so
+  neither thread showed a name. See `docs/notes.md`.
+- **Note:** Messages AppleScript does not work on Bryce's Mac (macOS 26 removed the
+  `account` class) and it exits 0 while sending nothing. Client texts have to be
+  sent from his phone.
+
 **Next session picks up:** the Google Business Profile is unclaimed and we have no
 access — that's the biggest open item. The About page and the hero both need real
 photos from the client before they're worth rebuilding. See `docs/roadmap.md`.
