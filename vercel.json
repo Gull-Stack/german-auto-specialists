@@ -2,6 +2,9 @@
   "buildCommand": "npm run build",
   "outputDirectory": "_site",
   "redirects": [
+    { "source": "/guides/best-german-auto-repair-utah-2026/", "destination": "/services/", "permanent": true },
+    { "source": "/guides/bmw-audi-maintenance-cost-guide/", "destination": "/services/", "permanent": true },
+    { "source": "/guides/:path*/", "destination": "/services/", "permanent": true },
     { "source": "/guides/:path*", "destination": "/services/", "permanent": true },
     { "source": "/api/contact", "destination": "/contact/", "permanent": false }
   ]
