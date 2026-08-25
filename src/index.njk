@@ -1,6 +1,6 @@
 ---
 title: "German Auto Specialists — Independent Audi, BMW, VW & Mini Repair in West Jordan, Utah"
-description: "German Auto Specialists is West Jordan's trusted independent German auto repair shop. Expert Audi, BMW, Volkswagen & Mini Cooper service at prices below the dealer. Call (801) 432-8790."
+description: "German Auto Specialists is West Jordan's trusted independent German auto repair shop. Expert Audi, BMW, Volkswagen & Mini Cooper service. Call (801) 432-8790."
 ---
 {% extends "base.njk" %}
 
@@ -37,8 +37,8 @@ description: "German Auto Specialists is West Jordan's trusted independent Germa
   "priceRange": "$$",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "150"
+    "ratingValue": "4.6",
+    "reviewCount": "171"
   }
 }
 </script>
@@ -47,49 +47,32 @@ description: "German Auto Specialists is West Jordan's trusted independent Germa
 {% block content %}
   <!-- Hero -->
   <section class="hero">
-    <div id="scroll-animation-container">
-      <canvas id="hero-canvas"></canvas>
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <p class="section-label">West Jordan's Trusted German Auto Shop</p>
+      <h1>Your German Car Deserves <em>Expert</em> Hands</h1>
+      <p>Audi, BMW, Volkswagen and Mini Cooper repair by certified German car specialists.</p>
+      <div class="hero-buttons">
+        <a href="tel:+18014328790" class="btn btn-primary btn-lg">Call Now</a>
+      </div>
     </div>
+  </section>
 
-    <div class="hero-scroll-panels">
-      <div class="scroll-panel panel-hero">
-        <div class="panel-inner">
-          <p class="section-label">West Jordan's Trusted German Auto Shop</p>
-          <h1>Your German Car Deserves <em>Expert</em> Hands</h1>
-          <p>Dealer-quality Audi, BMW, Volkswagen & Mini Cooper repair — without the dealer price tag.</p>
-          <div class="hero-buttons">
-            <a href="tel:+18014328790" class="btn btn-primary btn-lg">Call Now</a>
-          </div>
+  <!-- Stats -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="overlay-stats">
+        <div class="overlay-stat">
+          <h3>2010</h3>
+          <p>Serving Since</p>
         </div>
-      </div>
-
-      <div class="scroll-panel panel-stats">
-        <div class="panel-inner">
-          <div class="overlay-stats">
-            <div class="overlay-stat">
-              <h3>20+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div class="overlay-stat">
-              <h3>4.9 ★</h3>
-              <p>Google Reviews</p>
-            </div>
-            <div class="overlay-stat">
-              <h3>40%</h3>
-              <p>Less Than Dealers</p>
-            </div>
-            <div class="overlay-stat">
-              <h3>100%</h3>
-              <p>Certified Mechanics</p>
-            </div>
-          </div>
+        <div class="overlay-stat">
+          <h3>4.6 &#9733;</h3>
+          <p>Google Reviews</p>
         </div>
-      </div>
-
-      <div class="scroll-panel panel-value">
-        <div class="panel-inner">
-          <h2 style="color:#fff; margin-bottom:16px; text-shadow: 0 2px 20px rgba(0,0,0,.8), 0 0 60px rgba(0,0,0,.5);">We Know What's Under the Hood</h2>
-          <p style="color:rgba(255,255,255,.85); font-size:1.15rem; max-width:600px; margin:0 auto; text-shadow: 0 2px 12px rgba(0,0,0,.7);">Every bolt, every sensor, every system — German engineering decoded by specialists who work on these cars every single day.</p>
+        <div class="overlay-stat">
+          <h3>100%</h3>
+          <p>Certified Mechanics</p>
         </div>
       </div>
     </div>
@@ -106,7 +89,7 @@ description: "German Auto Specialists is West Jordan's trusted independent Germa
       <div class="services-grid">
         <div class="service-card fade-up">
           <h3>Audi Repair</h3>
-          <p>From routine maintenance to complex engine work — your Audi gets the specialized attention it deserves, at a fraction of dealer cost.</p>
+          <p>From routine maintenance to complex engine work — your Audi gets the specialized attention it deserves.</p>
           <a href="/services/audi-repair/">Learn More →</a>
         </div>
         <div class="service-card fade-up">
@@ -132,12 +115,12 @@ description: "German Auto Specialists is West Jordan's trusted independent Germa
   <section class="section section-light section-center">
     <div class="container">
       <p class="section-label fade-up">Why Choose Us</p>
-      <h2 class="fade-up">The Smarter Alternative to the Dealership</h2>
+      <h2 class="fade-up">Why German Car Owners Choose Us</h2>
       <div class="features-grid">
         <div class="feature-item fade-up">
           <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-          <h3>Save Up to 40%</h3>
-          <p>Same quality parts, same expert service — without the overhead markups that drive dealership prices through the roof.</p>
+          <h3>Fair Pricing</h3>
+          <p>Quality parts, expert service, and an honest quote before the work starts. No surprises on your bill.</p>
         </div>
         <div class="feature-item fade-up">
           <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
@@ -152,7 +135,7 @@ description: "German Auto Specialists is West Jordan's trusted independent Germa
         <div class="feature-item fade-up">
           <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
           <h3>Certified Expertise</h3>
-          <p>Our mechanics specialize exclusively in German vehicles. Your car gets a specialist, not a generalist who Googles the problem.</p>
+          <p>Our mechanics specialize exclusively in German vehicles. Your car gets a specialist.</p>
         </div>
       </div>
     </div>
@@ -211,8 +194,8 @@ description: "German Auto Specialists is West Jordan's trusted independent Germa
   <!-- CTA Section -->
   <section class="cta-section">
     <div class="container">
-      <h2 class="fade-up">Ready to Save on Your Next Service?</h2>
-      <p class="fade-up">Get expert German auto repair at honest prices. Call now or stop by our West Jordan shop — no appointment needed for estimates.</p>
+      <h2 class="fade-up">Ready to Schedule Your Service?</h2>
+      <p class="fade-up">Expert German auto repair from certified specialists. Call our West Jordan shop to schedule service.</p>
       <div class="cta-buttons fade-up">
         <a href="tel:+18014328790" class="btn btn-primary">Call (801) 432-8790</a>
         <a href="/contact/" class="btn btn-outline">Get Directions</a>

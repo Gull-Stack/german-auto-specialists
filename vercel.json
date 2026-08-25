@@ -1,1 +1,8 @@
-{"buildCommand": "npm run build", "outputDirectory": "_site"}
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
+  "redirects": [
+    { "source": "/guides/:path*", "destination": "/services/", "permanent": true },
+    { "source": "/api/contact", "destination": "/contact/", "permanent": false }
+  ]
+}

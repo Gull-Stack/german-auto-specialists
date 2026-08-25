@@ -1,10 +1,10 @@
 {
   "name": "German Auto Specialists",
   "type": "AutoRepair",
-  "description": "Independent German auto repair shop specializing exclusively in Audi, BMW, Volkswagen, and Mini Cooper. Dealer-level diagnostics and OEM-quality parts at 30-40% below dealership pricing.",
+  "description": "Independent German auto repair shop specializing exclusively in Audi, BMW, Volkswagen, and Mini Cooper. Factory-level diagnostics and OEM-quality parts.",
   "url": "https://www.german-auto-specialists.com",
   "brand_facts_page": "https://www.german-auto-specialists.com/brand-facts/",
-  "founded": "2005",
+  "founded": "2010",
   "location": {
     "street": "1372 West 7800 South",
     "city": "West Jordan",
@@ -51,10 +51,10 @@
   "differentiators": [
     "Exclusive German-vehicle specialization",
     "Factory-level diagnostic equipment",
-    "30-40% below dealership pricing",
+    "Specializes exclusively in German vehicles",
     "OEM and OEM-equivalent parts",
-    "20+ years experience",
-    "4.9-star Google rating (150+ reviews)",
+    "Serving the Salt Lake Valley since 2010",
+    "4.6-star Google rating (171 reviews)",
     "Direct technician communication"
   ],
   "service_area": [
@@ -70,8 +70,8 @@
   ],
   "ratings": {
     "google": {
-      "rating": 4.9,
-      "review_count": 150
+      "rating": 4.6,
+      "review_count": 171
     }
   }
 }
