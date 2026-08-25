@@ -20,9 +20,11 @@ The relationship, not the code, is the thing that needs repair.
    business. Worth revisiting in a month.
 
 ## On us
-- **Claim the Google Business Profile.** It is unclaimed — the panel still offers
-  "Own this business?". It is their single highest-value local asset, it is showing
-  4.6/171, and we have no access to it. This is the highest-leverage open item.
+- **Get Manager access to the Google Business Profile.** It is already claimed —
+  Vincen is the primary owner (confirmed 25 Aug). We simply have no access, which
+  is a different and much easier problem: he adds `bryce@gullstack.com` under
+  People and access. It shows 4.6/171 and is what most local customers see before
+  the website, so it is still the highest-leverage open item.
 - **Rebuild the About page** once photos arrive.
 - **Decide what replaces the two deleted guides.** `/guides/bmw-audi-maintenance-cost-guide/`
   and `/guides/best-german-auto-repair-utah-2026/` were the site's only real AEO assets,

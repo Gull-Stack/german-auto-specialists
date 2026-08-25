@@ -54,8 +54,13 @@
 - **`owner-portrait.jpg`** is not Vincen. It is stock. Do not reuse it as a portrait.
 
 ## Gotchas
-- The **Google Business Profile is not ours.** The knowledge panel still shows
-  "Own this business?", so nobody has claimed it. GBP edits are not available to us.
+- **The Google Business Profile IS claimed — Vincen is the primary owner.**
+  ⚠ An earlier note here said it was unclaimed, read off the "Own this business?"
+  link in the public knowledge panel. That link renders for anyone not signed in
+  as an owner, so it is not evidence of anything. Vincen confirmed 25 Aug 2026
+  that he shows as primary owner under People and access.
+  What is actually true: **we have no access.** Ask Vincen to add
+  `bryce@gullstack.com` as a Manager before promising any GBP work.
 - Service pages (`src/services/*.html`) are plain HTML, not Nunjucks templates, and each
   carries **its own inline copy of the header and footer**. A change to
   `src/_includes/base.njk` does **not** reach them. Search all five files separately.

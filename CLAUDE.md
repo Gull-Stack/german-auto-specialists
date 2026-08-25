@@ -56,6 +56,8 @@ facts about this business that are actually verified.
   `account` class) and it exits 0 while sending nothing. Client texts have to be
   sent from his phone.
 
-**Next session picks up:** the Google Business Profile is unclaimed and we have no
-access — that's the biggest open item. The About page and the hero both need real
+**Next session picks up:** we have no access to the Google Business Profile —
+that's the biggest open item. (Corrected same day: it is NOT unclaimed. Vincen is
+the primary owner. The "Own this business?" link that suggested otherwise renders
+for anyone not signed in as an owner and proves nothing.) The About page and the hero both need real
 photos from the client before they're worth rebuilding. See `docs/roadmap.md`.
