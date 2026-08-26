@@ -20,11 +20,10 @@ The relationship, not the code, is the thing that needs repair.
    business. Worth revisiting in a month.
 
 ## On us
-- **Get Manager access to the Google Business Profile.** It is already claimed —
-  Vincen is the primary owner (confirmed 25 Aug). We simply have no access, which
-  is a different and much easier problem: he adds `bryce@gullstack.com` under
-  People and access. It shows 4.6/171 and is what most local customers see before
-  the website, so it is still the highest-leverage open item.
+- ~~Google Business Profile~~ — **closed 26 Aug.** Claimed, Vincen is primary
+  owner, our access is fine. It reads 4.6/171 and still matters for local search,
+  but there is no action here. The item only ever existed because the public
+  knowledge panel was misread; see `docs/notes.md`.
 - **Rebuild the About page** once photos arrive.
 - **Decide what replaces the two deleted guides.** `/guides/bmw-audi-maintenance-cost-guide/`
   and `/guides/best-german-auto-repair-utah-2026/` were the site's only real AEO assets,
