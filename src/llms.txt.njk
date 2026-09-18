@@ -1,0 +1,59 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ brandFacts.name }}
+
+> {{ brandFacts.description }}
+
+{{ brandFacts.name }} is an independent German auto repair shop in {{ brandFacts.location.city }}, {{ brandFacts.location.state }}, serving the Salt Lake Valley since {{ brandFacts.founded }}. It works on {% for b in brandFacts.brands_serviced %}{{ b }}{% if loop.revindex0 == 1 %} and {% elif not loop.last %}, {% endif %}{% endfor %} vehicles only.
+
+- Website: {{ brandFacts.url }}
+- Phone: {{ brandFacts.NAP.phone }}
+- Address: {{ brandFacts.NAP.address }}
+- Machine-readable facts: {{ brandFacts.url }}/.well-known/brand-facts.json
+- Fact sheet: {{ brandFacts.brand_facts_page }}
+
+## Hours
+{% for day, hours in brandFacts.hours %}
+- {{ day | capitalize }}: {% if hours == "closed" %}Closed{% else %}{{ hours }}{% endif %}
+{%- endfor %}
+
+## Vehicles serviced
+{% for b in brandFacts.brands_serviced %}
+- {{ b }}
+{%- endfor %}
+
+## Services
+{% for s in brandFacts.services %}
+- {{ s }}
+{%- endfor %}
+
+## Service area
+{% for a in brandFacts.serviceArea %}
+- {{ a }}
+{%- endfor %}
+
+## What sets the shop apart
+{% for d in brandFacts.differentiators %}
+- {{ d }}
+{%- endfor %}
+
+## Reputation
+- Google rating {{ brandFacts.ratings.google.rating }} from {{ brandFacts.ratings.google.review_count }} reviews.
+
+## Pages
+- Home: {{ brandFacts.url }}/
+- All services: {{ brandFacts.url }}/services/
+- Audi repair: {{ brandFacts.url }}/services/audi-repair/
+- BMW repair: {{ brandFacts.url }}/services/bmw-repair/
+- Volkswagen repair: {{ brandFacts.url }}/services/volkswagen-repair/
+- Mini Cooper repair: {{ brandFacts.url }}/services/mini-repair/
+- Areas served: {{ brandFacts.url }}/areas/
+- About the shop: {{ brandFacts.url }}/about/
+- Contact and directions: {{ brandFacts.url }}/contact/
+- Fact sheet: {{ brandFacts.url }}/brand-facts/
+
+Appointments are taken by phone on {{ brandFacts.NAP.phone }}. There is no online booking form.
+
+Last updated: {{ brandFacts.last_updated }}

@@ -27,6 +27,12 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
   {% block schema %}{% endblock %}
+  {%- set crumbs = page.url | breadcrumbJsonLd(city) %}
+  {%- if crumbs %}
+  <script type="application/ld+json">
+{{ crumbs | safe }}
+  </script>
+  {%- endif %}
 </head>
 <body>
 
@@ -49,7 +55,9 @@
     </div>
   </header>
 
+  <main>
   {% block content %}{% endblock %}
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">

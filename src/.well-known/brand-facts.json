@@ -19,6 +19,11 @@
     "phone_display": "(801) 432-8790",
     "email": "vincen@german-auto-specialists.com"
   },
+  "NAP": {
+    "name": "German Auto Specialists",
+    "address": "1372 West 7800 South, West Jordan, Utah 84088",
+    "phone": "(801) 432-8790"
+  },
   "hours": {
     "monday": "08:30-17:30",
     "tuesday": "08:30-17:30",
@@ -57,7 +62,7 @@
     "4.6-star Google rating (171 reviews)",
     "Direct technician communication"
   ],
-  "service_area": [
+  "serviceArea": [
     "West Jordan",
     "South Jordan",
     "Sandy",
@@ -73,5 +78,6 @@
       "rating": 4.6,
       "review_count": 171
     }
-  }
+  },
+  "last_updated": "2026-09-18"
 }
